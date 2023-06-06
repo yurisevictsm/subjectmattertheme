@@ -1,0 +1,13 @@
+{
+    "name": "yurisevictsm/subjectmattertheme",
+    "description": "Custom theme for Subject Matter",
+    "type": "drupal-custom-theme",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Alan Yurisevic",
+            "email": "yurisevic@teamsubjectmatter.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,16 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+fontawesome:
+  css:
+    theme:
+      css/fontawesome.min.css: {}
+      css/brands.min.css: {}
+      css/solid.min.css: {}

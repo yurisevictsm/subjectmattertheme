@@ -1,0 +1,87 @@
+/** Load Fonts **/
+
+//@import url('//fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+/** Set Base Font Sizes */
+
+html {
+    font-size: calc( $font__base-size / 16px );
+}
+
+body {
+    font-size: rem( $font__base-size );
+    line-height: $font__line-height-body;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: $text;
+    line-height: $font__line-height-body;
+}
+strong{
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    //font-family: $font__title;
+}
+
+h1{
+    @include media-breakpoint-up(md) {
+        
+    }
+}
+h2{
+    @include media-breakpoint-up(md) {
+
+    }
+}
+h3{
+    
+}
+
+
+button, .btn, .buttons a, .btn-primary{
+    border: 2px solid $orange;
+    background-color: $white;
+    font-size: rem(16px);
+    line-height: 21px;
+    padding:15px;
+    color: $blue;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border-radius: 0;
+    font-weight: bold;
+    &:hover, &:focus{
+        border: 2px solid $orange;
+        background-color: $white;
+        color: $blue;
+        box-shadow: none;
+    }
+}
+
+p{
+    margin-bottom: 25px;
+    a{
+        color: $link;
+        &:hover{
+            color: $orange;
+        }
+    }
+}
+
+a{
+    color: $link;
+    &:hover{
+        color: $orange;
+    }
+}

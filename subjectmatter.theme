@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * SubjectMatter theme file.
+ */
+
+//add template suggestions per content type and term
+ function subjectmatter_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+      if(is_object($node)) {
+         $content_type = $node->bundle();
+         $suggestions[] = 'page__type__'.$content_type;
+      }
+    }
+    if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+      $term = Term::load($tid);
+      $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
+    }
+  }

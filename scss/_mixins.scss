@@ -1,0 +1,7 @@
+@function rem( $target ) {
+	@return calc($target / $font__base-size * 1rem);
+}
+
+@function vw( $target, $context ) {
+	@return calc( $target / $context * 100vw );
+}

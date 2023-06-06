@@ -1,0 +1,28 @@
+{
+    "name": "subjectmatter",
+    "version": "0.0.1",
+    "description": "Base theme for Subject Matter",
+    "main": "gulp watch",
+    "private": "false",
+    "scripts": {
+      "gulp-sass": "gulp css"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "author": "Subject Matter",
+    "license": "ISC",
+    "dependencies": {
+      "gulp": "^4.0.2",
+      "gulp-autoprefixer": "^5.0.0",
+      "gulp-concat": "*",
+      "gulp-livereload": "^4.0.1",
+      "gulp-sourcemaps": "^2.6.4",
+      "gulp-uglify": "*"
+    },
+    "devDependencies": {
+      "gulp-dart-sass": "^1.1.0"
+    }
+  }
+  
